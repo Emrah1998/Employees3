@@ -3,13 +3,10 @@ server:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/MS28
+    url: jdbc:postgresql://localhost:5432/Yeni
     username: postgres
     password: 123
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
     open-in-view: false
-  liquibase:
-    change-log: classpath:liquibase/changelog-master.yml
-    enabled: false
